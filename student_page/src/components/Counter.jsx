@@ -4,7 +4,7 @@ function Counter() {
   const [value, setValue] = useState(0);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="counter-value" style={{ padding: "20px" }}>
       
       <h2>Counter</h2>
       <h1 style={{ color: value === 0 ? "red" : "green" }}> {value} </h1>
