@@ -41,9 +41,7 @@ function AddStudent() {
     <div style={{ padding: "20px" }}>
       <h2>Add Student</h2>
       <form onSubmit={handleSubmit}>
-        <input placeholder="Name" value={form.name} onChange={(e) =>   setForm({ ...form, name: e.target.value })
-          }
-        />
+        <input placeholder="Name" value={form.name} onChange={(e) =>   setForm({ ...form, name: e.target.value }) } />
         <p style={{ color: "red" }}>{errors.name}</p>
 
         <input placeholder="Email" value={form.email} onChange={(e) =>   setForm({ ...form, email: e.target.value }) } />
@@ -53,12 +51,12 @@ function AddStudent() {
         <p style={{ color: "red" }}>{errors.phone}</p>
 
         <label>
-          <input type="radio" value="Male" checked={form.gender === "Male"} onChange={(e) =>   setForm({ ...form, gender: e.target.value }) } />
+          <input type="radio" value="Male" checked={form.gender === "Male"} onChange={(e) => setForm({ ...form, gender: e.target.value }) } />
           Male
         </label>
 
         <label>
-          <input type="radio" value="Female" checked={form.gender === "Female"} onChange={(e) =>   setForm({ ...form, gender: e.target.value }) } />
+          <input type="radio" value="Female" checked={form.gender === "Female"} onChange={(e) => setForm({ ...form, gender: e.target.value }) } />
           Female
         </label>
 

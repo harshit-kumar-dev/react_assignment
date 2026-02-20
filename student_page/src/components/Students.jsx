@@ -21,6 +21,7 @@ function Students() {
         setError(err.message);
         setLoading(false);
       });
+      
   }, []);
 
   if (loading) return <p>Loading...</p>;
