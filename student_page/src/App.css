@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px #ddd;
+}
